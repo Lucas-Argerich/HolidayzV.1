@@ -1,0 +1,176 @@
+header {
+    #headerLight {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(50.9% 50.9% at 50% 0%, #ffffff 0%, rgba(196, 196, 196, 0) 100%);
+        display: flex;
+        z-index: 10;
+        h1 {
+            display: inline-block;
+            margin: 8% auto;
+            font-weight: 600;
+        }
+    }
+}
+.headerOne {
+    width: 100%;
+    height: 400px;
+    @media (min-width: 500px) {
+        height: 780px;
+    }
+    .carousel-inner {
+        .one {
+            background: url("../assets/images/Casa De Madera Marrón En Campo De Hierba Verde Cerca De árboles Y Mont.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .two {
+            background: url("../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .three {
+            background: url("../assets/images/luca-bravo-zAjdgNXsMeg-unsplash.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: 426px) {
+        .arrowAnimation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .arrowOne,
+        .arrowTwo,
+        .arrowThree {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px 0;
+            .innerLeft {
+                width: 100px;
+                height: 20px;
+                transform: rotate(27deg);
+                clip-path: polygon(0% 0%, 80% 0%, 90% 100%, 0% 100%);
+                position: relative;
+                left: 19px;
+            }
+            .innerRight {
+                width: 100px;
+                height: 20px;
+                transform: rotate(-27deg);
+                clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 10% 100%);
+                position: relative;
+                right: 19px;
+            }
+        }
+        @keyframes one {
+            0% {
+                background-color: transparent;
+            }
+            16% {
+                background-color: #fff;
+            }
+            33% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: transparent;
+            }
+            66% {
+                background-color: transparent;
+            }
+            83% {
+                background-color: transparent;
+            }
+            100% {
+                background-color: transparent;
+            }
+        }
+
+        .arrowOne .innerLeft,
+        .arrowOne .innerRight {
+            animation-name: one;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes two {
+            0% {
+                background-color: transparent;
+            }
+            16% {
+                background-color: transparent;
+            }
+            33% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: #fff;
+            }
+            66% {
+                background-color: transparent;
+            }
+            83% {
+                background-color: transparent;
+            }
+            100% {
+                background-color: transparent;
+            }
+        }
+
+        .arrowTwo .innerLeft,
+        .arrowTwo .innerRight {
+            animation-name: two;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes three {
+            0% {
+                background-color: transparent;
+            }
+            16% {
+                background-color: transparent;
+            }
+            33% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: transparent;
+            }
+            66% {
+                background-color: transparent;
+            }
+            83% {
+                background-color: #fff;
+            }
+            100% {
+                background-color: transparent;
+            }
+        }
+
+        .arrowThree .innerLeft,
+        .arrowThree .innerRight {
+            animation-name: three;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+.headerTwo {
+    width: 100%;
+    height: 400px;
+    background: url("../assets/images/Piscina\ Infinita\ Cerca\ De\ La\ Playa.jpg");
+    background-position: center;
+    background-size: cover;
+}

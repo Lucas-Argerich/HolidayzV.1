@@ -1,0 +1,203 @@
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 64px;
+    background: $main;
+    z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    @media (max-width: 599px) {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: 100%;
+            position: relative;
+            top: 64px;
+            transform: scale(0, 1);
+            transition: 400ms;
+            transform-origin: left;
+            padding: 0;
+            .navOne {
+                transition: 450ms;
+            }
+            .navTwo {
+                transition: 500ms;
+            }
+            .navThree {
+                transition: 550ms;
+            }
+            .navFour {
+                transition: 600ms;
+            }
+            .navFive {
+                transition: 650ms;
+            }
+            .navSix {
+                transition: 700ms;
+            }
+        }
+        li {
+            height: 64px;
+            width: 90%;
+            background: $main;
+            margin: 4px 0;
+            text-align: right;
+            transform: scale(0, 1);
+            transform-origin: left;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+            padding: 0;
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 16px 10px 16px 0;
+                opacity: 0;
+                transition: opacity 100ms ease-in-out;
+            }
+        }
+    }
+    .navToggle {
+        display: none;
+    }
+    @media (max-width: 599px) {
+        display: flex;
+        justify-content: center;
+        ul {
+            width: 100%;
+            position: relative;
+            top: 64px;
+            transform: scale(0, 1);
+            transition: 400ms;
+            transform-origin: left;
+            padding: 0;
+            .navOne {
+                transition: 450ms;
+            }
+            .navTwo {
+                transition: 500ms;
+            }
+            .navThree {
+                transition: 550ms;
+            }
+            .navFour {
+                transition: 600ms;
+            }
+            .navFive {
+                transition: 650ms;
+            }
+            .navSix {
+                transition: 700ms;
+            }
+        }
+        li {
+            height: 64px;
+            width: 90%;
+            background: $main;
+            margin: 4px 0;
+            text-align: right;
+            transform: scale(0, 1);
+            transform-origin: left;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+            padding: 0;
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 16px 10px 16px 0;
+                opacity: 0;
+                transition: opacity 100ms ease-in-out;
+            }
+        }
+
+        .navToggle {
+            &:checked ~ ul li a {
+                opacity: 1;
+                transition: opacity 200ms ease-in-out 300ms;
+            }
+            &:checked ~ ul {
+                transform: scale(1, 1);
+            }
+            &:checked ~ ul li {
+                transform: scale(1, 1);
+            }
+            &:checked ~ .navToggleLabel {
+                transform: rotate(270deg);
+            }
+        }
+        .navToggleLabel {
+            position: absolute;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: 400ms;
+            span,
+            span::before,
+            span::after {
+                display: block;
+                background: white;
+                height: 5px;
+                width: 2em;
+                position: relative;
+            }
+            span::before,
+            span::after {
+                content: "";
+                position: absolute;
+            }
+            span::before {
+                bottom: 10px;
+            }
+            span::after {
+                top: 10px;
+            }
+        }
+    }
+    @media (min-width: 800px) {
+        padding: 0 200px;
+    }
+    @media (min-width: 600px) {
+        height: 100px;
+        ul {
+            padding: 0 0 41px 0;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            grid-template-areas: "navOne navTwo navThree navFour navFive navSix";
+            height: 100%;
+            align-items: center;
+            text-align: center;
+            .navOne {
+                grid-area: "navOne";
+            }
+            .navTwo {
+                grid-area: "navTwo";
+            }
+            .navThree {
+                grid-area: "navThree";
+            }
+            .navFour {
+                grid-area: "navFour";
+            }
+            .navFive {
+                grid-area: "navFive";
+            }
+            .navSix {
+                grid-area: "navSix";
+            }
+            li {
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 20%;
+                    height: 2px;
+                    margin: auto;
+                    transition: all 250ms;
+                }
+                &:hover::after {
+                    background: black;
+                }
+            }
+        }
+    }
+}

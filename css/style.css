@@ -1,0 +1,1065 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+  body::-webkit-scrollbar {
+    width: 13px; }
+  body::-webkit-scrollbar-track {
+    background: #c4c4c4; }
+  body::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+    border: solid 3px #c4c4c4; }
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: normal; }
+
+nav a {
+  color: black;
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-size: 24px; }
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4.5rem; }
+
+h6 {
+  font-family: "Pacifico", cursive; }
+
+.button {
+  background: #a6a6a6;
+  color: black;
+  text-align: center;
+  padding: 10px 55px;
+  filter: drop-shadow(0 4px 4px #00000030);
+  margin: 0 auto 30px;
+  transition: ease-in-out 100ms; }
+  .button:hover {
+    padding: 9px 50px;
+    margin: 2px auto 30px; }
+
+footer {
+  background: #a6a6a6;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column; }
+  footer h6 {
+    display: inline-block; }
+  footer a {
+    padding-top: 20px;
+    font-size: 14px; }
+
+header #headerLight {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50.9% 50.9% at 50% 0%, #ffffff 0%, rgba(196, 196, 196, 0) 100%);
+  display: flex;
+  z-index: 10; }
+  header #headerLight h1 {
+    display: inline-block;
+    margin: 8% auto;
+    font-weight: 600; }
+
+.headerOne {
+  width: 100%;
+  height: 400px; }
+  @media (min-width: 500px) {
+    .headerOne {
+      height: 780px; } }
+  .headerOne .carousel-inner .one {
+    background: url("../assets/images/Casa De Madera Marrón En Campo De Hierba Verde Cerca De árboles Y Mont.jpg");
+    background-position: center;
+    background-size: cover; }
+  .headerOne .carousel-inner .two {
+    background: url("../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover; }
+  .headerOne .carousel-inner .three {
+    background: url("../assets/images/luca-bravo-zAjdgNXsMeg-unsplash.jpg");
+    background-position: center;
+    background-size: cover; }
+  @media (min-width: 426px) {
+    .headerOne .arrowAnimation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .headerOne .arrowOne,
+    .headerOne .arrowTwo,
+    .headerOne .arrowThree {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px 0; }
+      .headerOne .arrowOne .innerLeft,
+      .headerOne .arrowTwo .innerLeft,
+      .headerOne .arrowThree .innerLeft {
+        width: 100px;
+        height: 20px;
+        transform: rotate(27deg);
+        clip-path: polygon(0% 0%, 80% 0%, 90% 100%, 0% 100%);
+        position: relative;
+        left: 19px; }
+      .headerOne .arrowOne .innerRight,
+      .headerOne .arrowTwo .innerRight,
+      .headerOne .arrowThree .innerRight {
+        width: 100px;
+        height: 20px;
+        transform: rotate(-27deg);
+        clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 10% 100%);
+        position: relative;
+        right: 19px; }
+    @keyframes one {
+      0% {
+        background-color: transparent; }
+      16% {
+        background-color: #fff; }
+      33% {
+        background-color: transparent; }
+      50% {
+        background-color: transparent; }
+      66% {
+        background-color: transparent; }
+      83% {
+        background-color: transparent; }
+      100% {
+        background-color: transparent; } }
+    .headerOne .arrowOne .innerLeft,
+    .headerOne .arrowOne .innerRight {
+      animation-name: one;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; }
+    @keyframes two {
+      0% {
+        background-color: transparent; }
+      16% {
+        background-color: transparent; }
+      33% {
+        background-color: transparent; }
+      50% {
+        background-color: #fff; }
+      66% {
+        background-color: transparent; }
+      83% {
+        background-color: transparent; }
+      100% {
+        background-color: transparent; } }
+    .headerOne .arrowTwo .innerLeft,
+    .headerOne .arrowTwo .innerRight {
+      animation-name: two;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; }
+    @keyframes three {
+      0% {
+        background-color: transparent; }
+      16% {
+        background-color: transparent; }
+      33% {
+        background-color: transparent; }
+      50% {
+        background-color: transparent; }
+      66% {
+        background-color: transparent; }
+      83% {
+        background-color: #fff; }
+      100% {
+        background-color: transparent; } }
+    .headerOne .arrowThree .innerLeft,
+    .headerOne .arrowThree .innerRight {
+      animation-name: three;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; } }
+
+.headerTwo {
+  width: 100%;
+  height: 400px;
+  background: url("../assets/images/Piscina Infinita Cerca De La Playa.jpg");
+  background-position: center;
+  background-size: cover; }
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 64px;
+  background: #c4c4c4;
+  z-index: 99;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 599px) {
+    nav {
+      display: flex;
+      justify-content: center; }
+      nav ul {
+        width: 100%;
+        position: relative;
+        top: 64px;
+        transform: scale(0, 1);
+        transition: 400ms;
+        transform-origin: left;
+        padding: 0; }
+        nav ul .navOne {
+          transition: 450ms; }
+        nav ul .navTwo {
+          transition: 500ms; }
+        nav ul .navThree {
+          transition: 550ms; }
+        nav ul .navFour {
+          transition: 600ms; }
+        nav ul .navFive {
+          transition: 650ms; }
+        nav ul .navSix {
+          transition: 700ms; }
+      nav li {
+        height: 64px;
+        width: 90%;
+        background: #c4c4c4;
+        margin: 4px 0;
+        text-align: right;
+        transform: scale(0, 1);
+        transform-origin: left;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        padding: 0; }
+        nav li a {
+          display: inline-block;
+          width: 100%;
+          padding: 16px 10px 16px 0;
+          opacity: 0;
+          transition: opacity 100ms ease-in-out; } }
+  nav .navToggle {
+    display: none; }
+  @media (max-width: 599px) {
+    nav {
+      display: flex;
+      justify-content: center; }
+      nav ul {
+        width: 100%;
+        position: relative;
+        top: 64px;
+        transform: scale(0, 1);
+        transition: 400ms;
+        transform-origin: left;
+        padding: 0; }
+        nav ul .navOne {
+          transition: 450ms; }
+        nav ul .navTwo {
+          transition: 500ms; }
+        nav ul .navThree {
+          transition: 550ms; }
+        nav ul .navFour {
+          transition: 600ms; }
+        nav ul .navFive {
+          transition: 650ms; }
+        nav ul .navSix {
+          transition: 700ms; }
+      nav li {
+        height: 64px;
+        width: 90%;
+        background: #c4c4c4;
+        margin: 4px 0;
+        text-align: right;
+        transform: scale(0, 1);
+        transform-origin: left;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        padding: 0; }
+        nav li a {
+          display: inline-block;
+          width: 100%;
+          padding: 16px 10px 16px 0;
+          opacity: 0;
+          transition: opacity 100ms ease-in-out; }
+      nav .navToggle:checked ~ ul li a {
+        opacity: 1;
+        transition: opacity 200ms ease-in-out 300ms; }
+      nav .navToggle:checked ~ ul {
+        transform: scale(1, 1); }
+      nav .navToggle:checked ~ ul li {
+        transform: scale(1, 1); }
+      nav .navToggle:checked ~ .navToggleLabel {
+        transform: rotate(270deg); }
+      nav .navToggleLabel {
+        position: absolute;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: 400ms; }
+        nav .navToggleLabel span,
+        nav .navToggleLabel span::before,
+        nav .navToggleLabel span::after {
+          display: block;
+          background: white;
+          height: 5px;
+          width: 2em;
+          position: relative; }
+        nav .navToggleLabel span::before,
+        nav .navToggleLabel span::after {
+          content: "";
+          position: absolute; }
+        nav .navToggleLabel span::before {
+          bottom: 10px; }
+        nav .navToggleLabel span::after {
+          top: 10px; } }
+  @media (min-width: 800px) {
+    nav {
+      padding: 0 200px; } }
+  @media (min-width: 600px) {
+    nav {
+      height: 100px; }
+      nav ul {
+        padding: 0 0 41px 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        grid-template-areas: "navOne navTwo navThree navFour navFive navSix";
+        height: 100%;
+        align-items: center;
+        text-align: center; }
+        nav ul .navOne {
+          grid-area: "navOne"; }
+        nav ul .navTwo {
+          grid-area: "navTwo"; }
+        nav ul .navThree {
+          grid-area: "navThree"; }
+        nav ul .navFour {
+          grid-area: "navFour"; }
+        nav ul .navFive {
+          grid-area: "navFive"; }
+        nav ul .navSix {
+          grid-area: "navSix"; }
+        nav ul li:after {
+          content: "";
+          display: block;
+          width: 20%;
+          height: 2px;
+          margin: auto;
+          transition: all 250ms; }
+        nav ul li:hover::after {
+          background: black; } }
+
+.indexBlockOne {
+  height: 600px;
+  padding: 0 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: 4;
+  grid-template-areas: "h2   h2   h2     h2" "p    p    p      p" "bone btwo bthree bfour"; }
+  @media (min-width: 768px) {
+    .indexBlockOne {
+      padding: 0 200px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 4 50px;
+      gap: 10px;
+      grid-template-areas: "h2 h2 h2 h2 h2   h2 h2 h2     h2 h2 h2 h2" ". .    . .  p    p  p  p      .  . .     ." ". .    . .  .    .  .  .      .  . .     ." ". bone . .  btwo .  .  bthree .  . bfour .";
+      text-align: center; } }
+  .indexBlockOne .line {
+    grid-area: h2;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .indexBlockOne .line h2 {
+      font-size: 2rem;
+      text-align: center;
+      display: inline-block;
+      margin: auto; }
+      .indexBlockOne .line h2:after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 1px;
+        margin: auto;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 35%; }
+  .indexBlockOne .indexBlockOneText {
+    grid-area: p;
+    align-self: center; }
+  .indexBlockOne .one {
+    grid-area: bone; }
+  .indexBlockOne .two {
+    grid-area: btwo; }
+  .indexBlockOne .three {
+    grid-area: bthree; }
+  .indexBlockOne .four {
+    grid-area: bfour; }
+  .indexBlockOne .box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .indexBlockOne .box p {
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center; }
+      .indexBlockOne .box p::before {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 1px;
+        background: #000;
+        margin: auto;
+        position: relative;
+        bottom: 2px; }
+    .indexBlockOne .box img {
+      width: 4rem; }
+      @media (max-width: 425px) {
+        .indexBlockOne .box img {
+          width: 3rem; } }
+
+.indexBlockTwo {
+  background: #c4c4c4;
+  min-height: 400px;
+  padding: 0 40px;
+  display: flex; }
+  .indexBlockTwo .left {
+    width: 100%; }
+    .indexBlockTwo .left h3 {
+      font-size: 36px;
+      padding: 40px 0;
+      width: 50%; }
+    .indexBlockTwo .left p {
+      line-height: 30px; }
+    .indexBlockTwo .left .pleft {
+      width: 50%; }
+    .indexBlockTwo .left .line {
+      display: inline-block;
+      position: relative;
+      margin: 40px 0; }
+      .indexBlockTwo .left .line::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: -30px; }
+    @media (min-width: 1000px) {
+      .indexBlockTwo .left {
+        width: 66%; }
+        .indexBlockTwo .left .pleft {
+          width: 100%; }
+        .indexBlockTwo .left h3 {
+          width: 100%; } }
+  .indexBlockTwo .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .indexBlockTwo .right .img {
+      width: 150px;
+      height: 150px;
+      border-radius: 12px;
+      filter: drop-shadow(0 4px 4px #00000070); }
+      .indexBlockTwo .right .img.one {
+        background: url("../assets/images/lake near mountain under blue sky during daytime.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(-5deg);
+        position: absolute;
+        top: 140px;
+        left: -160px; }
+      .indexBlockTwo .right .img.two {
+        background: url("../assets/images/Tres Hombres De Pie Cerca De Cascadas.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(8deg);
+        position: absolute;
+        top: 200px;
+        left: -100px; }
+      @media (min-width: 420px) {
+        .indexBlockTwo .right .img.one {
+          top: 80px;
+          left: -160px; }
+        .indexBlockTwo .right .img.two {
+          top: 140px;
+          left: -100px; } }
+      @media (min-width: 600px) {
+        .indexBlockTwo .right .img.one {
+          top: 60px;
+          left: -260px; }
+        .indexBlockTwo .right .img.two {
+          top: 110px;
+          left: -200px; } }
+      @media (min-width: 740px) {
+        .indexBlockTwo .right .img.one {
+          top: 0px;
+          left: -300px; }
+        .indexBlockTwo .right .img.two {
+          top: 50px;
+          left: -200px; } }
+  @media (min-width: 1000px) {
+    .indexBlockTwo {
+      overflow: visible;
+      padding: 0 200px; }
+      .indexBlockTwo .right {
+        width: 33%; }
+        .indexBlockTwo .right .img {
+          width: 280px;
+          height: 320px; }
+          .indexBlockTwo .right .img.one {
+            transform: rotate(-10deg);
+            top: 20px;
+            left: 50px; }
+          .indexBlockTwo .right .img.two {
+            transform: rotate(8deg);
+            top: -40px;
+            left: 200px; } }
+
+.indexBlockThree {
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 4;
+  grid-template-areas: "h4       h4" "p        p" "boxone   boxtwo" "boxthree boxfour";
+  text-align: center;
+  margin-bottom: 30px; }
+  .indexBlockThree h4 {
+    grid-area: h4;
+    font-size: 36px;
+    padding: 100px 0 40px; }
+    .indexBlockThree h4::after {
+      content: "";
+      display: block;
+      width: 300px;
+      height: 1px;
+      background: #000;
+      margin: auto;
+      position: relative;
+      top: 20px; }
+  .indexBlockThree p {
+    grid-area: p; }
+  .indexBlockThree .text {
+    padding: 30px 0;
+    font-size: 18px; }
+  .indexBlockThree .one {
+    grid-area: boxone; }
+  .indexBlockThree .two {
+    grid-area: boxtwo; }
+  .indexBlockThree .three {
+    grid-area: boxthree; }
+  .indexBlockThree .four {
+    grid-area: boxfour; }
+  .indexBlockThree div {
+    background: #c4c4c4;
+    padding: 0 0 30px;
+    filter: drop-shadow(0 8px 4px #00000060); }
+    .indexBlockThree div img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      padding: 5px;
+      position: relative;
+      top: 15px; }
+    .indexBlockThree div .num {
+      font-size: 36px; }
+  @media (min-width: 1000px) {
+    .indexBlockThree {
+      padding: 0 200px 50px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "h4     h4     h4       h4" "p      p      p        p" "boxone boxtwo boxthree boxfour"; } }
+  @media (min-width: 1400px) {
+    .indexBlockThree {
+      padding: 0 200px 50px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: ". h4     h4     h4       h4      ." ". p      p      p        p       ." ". boxone boxtwo boxthree boxfour ."; } }
+
+.indexBlockFour {
+  height: auto;
+  background: #c4c4c4;
+  padding: 0 50px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px; }
+  .indexBlockFour h5 {
+    font-size: 36px;
+    padding: 20px 0; }
+    .indexBlockFour h5::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 1px;
+      background: black;
+      margin: auto;
+      position: relative;
+      top: 20px; }
+  .indexBlockFour p {
+    margin: 30px 0 50px; }
+
+.nosotrosBlockOne {
+  margin: 20px 50px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #c4c4c4; }
+  .nosotrosBlockOne h2 {
+    font-size: 36px;
+    padding: 10px 10%; }
+    .nosotrosBlockOne h2::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #000;
+      position: relative;
+      top: 20px; }
+  .nosotrosBlockOne p {
+    margin: 40px 0; }
+
+.nosotrosBlockTwo {
+  margin: 0 50px;
+  background: url("../assets/images/Puente Sobre El Agua.jpg");
+  height: 250px;
+  border-radius: 12px;
+  background-image: center;
+  background-position: center;
+  background-size: cover; }
+
+.nosotrosBlockThree {
+  margin: 20px 50px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #c4c4c4;
+  position: relative; }
+  .nosotrosBlockThree h3 {
+    font-size: 36px;
+    padding: 10px 5%; }
+  .nosotrosBlockThree p {
+    margin: 40px 0; }
+  .nosotrosBlockThree a {
+    background: #a6a6a6;
+    color: black;
+    text-align: center;
+    padding: 10px 35px;
+    filter: drop-shadow(0 4px 4px #00000030);
+    position: absolute;
+    bottom: 50px;
+    transition: ease-in-out 200ms; }
+    .nosotrosBlockThree a:hover {
+      padding: 9px 30px; }
+  @media (max-width: 600px) {
+    .nosotrosBlockThree {
+      padding: 10px 20px 100px; } }
+
+.nosotrosBlockFour {
+  margin: 0 50px;
+  height: 500px;
+  background: url("../assets/images/pexels-ono-kosuki-5648408.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative; }
+  .nosotrosBlockFour .polygon {
+    width: 60px;
+    height: 61px;
+    background: #090d10;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 75%, 0% 100%);
+    position: absolute;
+    bottom: -60px;
+    left: 20px; }
+
+.nosotrosBlockFive {
+  margin: 20px 50px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #c4c4c4; }
+  .nosotrosBlockFive h3 {
+    font-size: 24px;
+    padding: 40px 0 10px; }
+    .nosotrosBlockFive h3::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 1px;
+      background: #000;
+      position: relative;
+      top: 15px; }
+  .nosotrosBlockFive p {
+    margin: 40px 0; }
+
+.nosotrosBlockSix {
+  display: none; }
+
+@media (min-width: 600px) {
+  .nosotrosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, 250px) 300px;
+    grid-template-areas: "b1   b1   vid " "b1   b1   vid " "b2   b2   vid " "b2   b2   b4  " "b3   b3   b4  " "b3   b3   b5  ";
+    gap: 20px;
+    padding: 50px 200px; }
+  .nosotrosBlockOne {
+    grid-area: b1;
+    margin: 0;
+    border-radius: 0 12px 12px 0; }
+  .nosotrosBlockTwo {
+    grid-area: b2;
+    margin: 0;
+    height: auto;
+    border-radius: 0 12px 12px 0; }
+  .nosotrosBlockThree {
+    grid-area: b3;
+    margin: 0;
+    border-radius: 0 12px 12px 0; }
+  .nosotrosBlockFour {
+    grid-area: b4;
+    margin: 0;
+    height: auto;
+    border-radius: 12px 0 0 12px; }
+  .nosotrosBlockFive {
+    grid-area: b5;
+    margin: 0;
+    border-radius: 12px 0 0 12px; }
+  .nosotrosBlockSix {
+    grid-area: vid;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url("../assets/images/pexels-vlada-karpovich-8045150.mp4");
+    border-radius: 12px 0 0 12px; }
+  .nosotrosBlockSix video {
+    width: 500px; } }
+
+@media (max-width: 1250px) {
+  .nosotrosGrid {
+    padding: 50px 10px; } }
+
+.serviciosBody h2 {
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 50px; }
+  .serviciosBody h2::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: auto;
+    background: black;
+    position: relative;
+    top: 10px; }
+
+.serviciosBlockOne {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px; }
+  .serviciosBlockOne div {
+    width: 280px;
+    height: 220px;
+    margin: 20px auto;
+    display: flex;
+    filter: drop-shadow(0 4px 4px #00000030); }
+    .serviciosBlockOne div.boxOne {
+      background: url("../assets/images/photo of brown bench near swimming pool.jpg");
+      background-size: cover;
+      background-position: center; }
+    .serviciosBlockOne div.boxTwo {
+      background: url("../assets/images/white private plane on airstrip.jpg");
+      background-size: cover;
+      background-position: center; }
+    .serviciosBlockOne div.boxThree {
+      background: url("../assets/images/white cruise ship on sea during daytime.jpg");
+      background-size: cover;
+      background-position: center; }
+    .serviciosBlockOne div.boxFour {
+      background: url("../assets/images/blue Volkswagen Polo 5-door hatchback.jpg");
+      background-size: cover;
+      background-position: center; }
+    .serviciosBlockOne div.boxFive {
+      background: url("../assets/images/white and blue identification card.jpg");
+      background-size: cover;
+      background-position: center; }
+    .serviciosBlockOne div p {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      align-self: flex-end;
+      font-weight: 600;
+      background: #c4c4c4; }
+  @media (min-width: 600px) {
+    .serviciosBlockOne {
+      margin: 80px 200px; } }
+  @media (min-width: 900px) {
+    .serviciosBlockOne {
+      margin: 80px 50px;
+      flex-direction: row;
+      justify-content: space-between; }
+      .serviciosBlockOne div {
+        width: 200px;
+        height: 150px; } }
+  @media (min-width: 1440px) {
+    .serviciosBlockOne div {
+      width: 250px;
+      height: 150px; } }
+  @media (min-width: 2560px) {
+    .serviciosBlockOne div {
+      width: 350px;
+      height: 200px; } }
+
+.serviciosBlockTwo {
+  background-color: #c4c4c4;
+  padding: 40px 100px;
+  margin: 0 0 60px;
+  position: relative; }
+  .serviciosBlockTwo h3 {
+    display: inline-block;
+    font-size: 36px;
+    padding: 0 0 20px;
+    margin: 0 0 30px;
+    position: relative; }
+    .serviciosBlockTwo h3::before {
+      display: block;
+      content: "";
+      width: 50%;
+      height: 1px;
+      background: black;
+      position: absolute;
+      bottom: 0; }
+  .serviciosBlockTwo p {
+    padding: 20px 0; }
+  .serviciosBlockTwo ul {
+    padding-bottom: 100px; }
+    .serviciosBlockTwo ul li {
+      list-style: circle inside; }
+  .serviciosBlockTwo a {
+    background: #a6a6a6;
+    color: black;
+    text-align: center;
+    padding: 10px 35px;
+    filter: drop-shadow(0 4px 4px #00000030);
+    position: absolute;
+    bottom: 50px;
+    transition: ease-in-out 200ms; }
+    .serviciosBlockTwo a:hover {
+      padding: 9px 30px; }
+
+.ubicacionesBlockOne {
+  text-align: center; }
+  .ubicacionesBlockOne h2 {
+    margin: 50px 0 0;
+    padding: 20px 0 40px;
+    font-size: 48px;
+    display: inline-block; }
+    .ubicacionesBlockOne h2::after {
+      content: "";
+      display: block;
+      background: black;
+      width: 50%;
+      height: 1px;
+      margin: auto;
+      position: relative;
+      top: 40px; }
+  .ubicacionesBlockOne p {
+    margin: 50px 0 100px; }
+    @media (min-width: 900px) {
+      .ubicacionesBlockOne p {
+        margin: 50px 200px 150px; } }
+
+.ubicacionesBlockTwo {
+  background: #c4c4c4;
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .ubicacionesBlockTwo .box {
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    filter: drop-shadow(0 4px 4px #00000030);
+    transition: ease-in-out 200ms; }
+    .ubicacionesBlockTwo .box:hover {
+      padding: 15px; }
+    .ubicacionesBlockTwo .box img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      position: relative;
+      left: -10px;
+      top: -10px; }
+    @media (max-width: 400px) {
+      .ubicacionesBlockTwo .box {
+        width: 300px;
+        height: 500px; }
+        .ubicacionesBlockTwo .box img {
+          width: 300px;
+          height: 250px; } }
+    .ubicacionesBlockTwo .box .top {
+      color: #b80000;
+      display: flex;
+      justify-content: space-between; }
+      .ubicacionesBlockTwo .box .top p {
+        font-family: "Bebas Neue", cursive;
+        font-size: 24px; }
+    .ubicacionesBlockTwo .box h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 36px;
+      display: inline-block;
+      position: relative;
+      left: 40px; }
+    .ubicacionesBlockTwo .box ul {
+      padding: 30px 0; }
+      .ubicacionesBlockTwo .box ul li {
+        font-family: "Bebas Neue", cursive;
+        font-size: 14px;
+        list-style: inside disc; }
+
+.ubicacionesBlockThree {
+  padding: 100px 0;
+  margin: 0 0 100px;
+  background: #c4c4c4;
+  display: flex; }
+
+.reservarBlockOne {
+  margin: 10px 50px;
+  font-size: 12px; }
+  @media (min-width: 769px) {
+    .reservarBlockOne {
+      margin: 10px 150px; } }
+  .reservarBlockOne svg {
+    position: relative;
+    top: 20px;
+    right: 20px; }
+  .reservarBlockOne a {
+    color: #0051af; }
+
+.reservarBlockTwo {
+  background: url("../assets/images/three brown wooden boat on blue lake water taken at daytime.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: 50px; }
+  .reservarBlockTwo .form {
+    background: #fff;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 769px) {
+      .reservarBlockTwo .form {
+        width: 30%; } }
+    .reservarBlockTwo .form h2 {
+      color: #bb0000;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 10px 10px 0;
+      align-self: flex-start; }
+    .reservarBlockTwo .form .inputContainer input {
+      width: 100%;
+      padding: 10px 35px;
+      background: url("../assets/icons/noun_Search_2157337.svg");
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: 5px 9px;
+      background-color: #c4c4c4;
+      border-radius: 5px;
+      border: 0;
+      margin: 15px 0; }
+    .reservarBlockTwo .form .dates {
+      width: 90%;
+      display: flex;
+      justify-content: center; }
+      .reservarBlockTwo .form .dates div {
+        position: relative;
+        width: 50%;
+        margin: 0 0 15px; }
+        .reservarBlockTwo .form .dates div input {
+          width: 100%;
+          padding: 15px 0 10px 20px;
+          background-color: #c4c4c4;
+          border-radius: 5px;
+          border: 0; }
+        .reservarBlockTwo .form .dates div label {
+          position: absolute;
+          font-size: 12px;
+          font-weight: 600;
+          top: 1px;
+          left: 4px; }
+    .reservarBlockTwo .form select {
+      width: 90%;
+      padding: 9px 0 9px 30px;
+      background: url("../assets/icons/noun_people_861209.svg");
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: 5px 9px;
+      background-color: #c4c4c4;
+      border-radius: 5px;
+      border: 0;
+      line-height: 15px; }
+    .reservarBlockTwo .form .buscar {
+      font-size: 24px;
+      padding: 5px 30px;
+      border: 0;
+      background: #c4c4c4;
+      border-radius: 30px;
+      font-family: "Bebas Neue", cursive;
+      margin: 15px; }
+
+.contactoBlockOne {
+  margin: 50px;
+  filter: drop-shadow(0 4px 4px #00000030); }
+  .contactoBlockOne h2 {
+    padding-bottom: 20px;
+    display: inline-block; }
+    .contactoBlockOne h2::after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 1px;
+      background: #000;
+      position: relative;
+      top: 10px; }
+  .contactoBlockOne iframe {
+    background: #c4c4c4; }
+
+.contactoBlockTwo {
+  padding: 10px 50px;
+  margin: 0 0 60px 0;
+  background: #c4c4c4; }
+  .contactoBlockTwo h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .contactoBlockTwo h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .contactoBlockTwo div {
+    margin: 0 0 30px; }
+    .contactoBlockTwo div div {
+      margin: 0 0 30px;
+      display: flex;
+      flex-direction: column; }

@@ -1,0 +1,43 @@
+.contactoBlockOne {
+    margin: 50px;
+    filter: $shadow;
+    h2 {
+        padding-bottom: 20px;
+        display: inline-block;
+        &::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1px;
+            background: #000;
+            position: relative;
+            top: 10px;
+        }
+    }
+    iframe {
+        background: $main;
+    }
+}
+.contactoBlockTwo {
+    padding: 10px 50px;
+    margin: 0 0 60px 0;
+    background: $main;
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    div {
+        margin: 0 0 30px;
+        div {
+            margin: 0 0 30px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

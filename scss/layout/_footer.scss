@@ -1,0 +1,13 @@
+footer {
+    background: $darker;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    h6{
+        display: inline-block;
+    }
+    a {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+}

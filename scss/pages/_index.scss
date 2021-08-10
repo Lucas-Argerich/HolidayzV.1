@@ -1,0 +1,327 @@
+.indexBlockOne {
+    height: 600px;
+    padding: 0 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 4;
+    grid-template-areas:
+        "h2   h2   h2     h2"
+        "p    p    p      p"
+        "bone btwo bthree bfour";
+    @media (min-width: 768px) {
+        padding: 0 200px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 4 50px;
+        gap: 10px;
+        grid-template-areas:
+            "h2 h2 h2 h2 h2   h2 h2 h2     h2 h2 h2 h2"
+            ". .    . .  p    p  p  p      .  . .     ."
+            ". .    . .  .    .  .  .      .  . .     ."
+            ". bone . .  btwo .  .  bthree .  . bfour .";
+        text-align: center;
+    }
+    .line {
+        grid-area: h2;
+        display: flex;
+        align-items: center;
+        position: relative;
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            display: inline-block;
+            margin: auto;
+            &:after {
+                content: "";
+                display: block;
+                width: 30%;
+                height: 1px;
+                margin: auto;
+                background: black;
+                position: absolute;
+                bottom: 0;
+                left: 35%;
+            }
+        }
+    }
+    .indexBlockOneText {
+        grid-area: p;
+        align-self: center;
+    }
+    .one {
+        grid-area: bone;
+    }
+    .two {
+        grid-area: btwo;
+    }
+    .three {
+        grid-area: bthree;
+    }
+    .four {
+        grid-area: bfour;
+    }
+    .box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            &::before {
+                content: "";
+                display: block;
+                width: 2rem;
+                height: 1px;
+                background: #000;
+                margin: auto;
+                position: relative;
+                bottom: 2px;
+                
+            }
+        }
+        img {
+            width: 4rem;
+            @media (max-width:425px){
+                width: 3rem;
+            }
+        }
+    }
+}
+.indexBlockTwo {
+    background: $main;
+    min-height: 400px;
+    padding: 0 40px;
+    display: flex;
+    .left {
+        width: 100%;
+        h3 {
+            font-size: 36px;
+            padding: 40px 0;
+            width: 50%;
+        }
+        p {
+            line-height: 30px;
+        }
+        .pleft {
+            width: 50%;
+        }
+        .line {
+            display: inline-block;
+            position: relative;
+            margin: 40px 0;
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: black;
+                position: absolute;
+                top: -30px;
+            }
+        }
+        @media (min-width: 1000px) {
+            width: 66%;
+            .pleft {
+                width: 100%;
+            }
+            h3 {
+                width: 100%;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .img {
+            width: 150px;
+            height: 150px;
+            border-radius: 12px;
+            filter: drop-shadow(0 4px 4px #00000070);
+            &.one {
+                background: url("../assets/images/lake\ near\ mountain\ under\ blue\ sky\ during\ daytime.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transform: rotate(-5deg);
+                position: absolute;
+                top: 140px;
+                left: -160px;
+            }
+            &.two {
+                background: url("../assets/images/Tres\ Hombres\ De\ Pie\ Cerca\ De\ Cascadas.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transform: rotate(8deg);
+                position: absolute;
+                top: 200px;
+                left: -100px;
+            }
+            @media (min-width: 420px) {
+                &.one {
+                    top: 80px;
+                    left: -160px;
+                }
+                &.two {
+                    top: 140px;
+                    left: -100px;
+                }
+            }
+            @media (min-width: 600px) {
+                &.one {
+                    top: 60px;
+                    left: -260px;
+                }
+                &.two {
+                    top: 110px;
+                    left: -200px;
+                }
+            }
+            @media (min-width: 740px) {
+                &.one {
+                    top: 0px;
+                    left: -300px;
+                }
+                &.two {
+                    top: 50px;
+                    left: -200px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1000px) {
+        overflow: visible;
+        padding: 0 200px;
+        .right {
+            width: 33%;
+            .img {
+                width: 280px;
+                height: 320px;
+                &.one {
+                    transform: rotate(-10deg);
+                    top: 20px;
+                    left: 50px;
+                }
+                &.two {
+                    transform: rotate(8deg);
+                    top: -40px;
+                    left: 200px;
+                }
+            }
+        }
+    }
+}
+.indexBlockThree {
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 4;
+    grid-template-areas:
+        "h4       h4"
+        "p        p"
+        "boxone   boxtwo"
+        "boxthree boxfour";
+    text-align: center;
+    margin-bottom: 30px;
+    h4 {
+        grid-area: h4;
+        font-size: 36px;
+        padding: 100px 0 40px;
+        &::after{
+            content: "";
+            display: block;
+            width: 300px;
+            height: 1px;
+            background: #000;
+            margin: auto;
+            position: relative;
+            top: 20px;
+        }
+    }
+    p {
+        grid-area: p;
+    }
+    .text {
+        padding: 30px 0;
+        font-size: 18px;
+    }
+    .one {
+        grid-area: boxone;
+    }
+    .two {
+        grid-area: boxtwo;
+    }
+    .three {
+        grid-area: boxthree;
+    }
+    .four {
+        grid-area: boxfour;
+    }
+    div {
+        background: $main;
+        padding: 0 0 30px;
+        filter: drop-shadow(0 8px 4px #00000060);
+        img {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            padding: 5px;
+            position: relative;
+            top: 15px;
+        }
+        .num {
+            font-size: 36px;
+        }
+    }
+    @media (min-width: 1000px) {
+        padding: 0 200px 50px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "h4     h4     h4       h4"
+            "p      p      p        p"
+            "boxone boxtwo boxthree boxfour";
+    }
+    @media (min-width: 1400px) {
+        padding: 0 200px 50px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            ". h4     h4     h4       h4      ."
+            ". p      p      p        p       ."
+            ". boxone boxtwo boxthree boxfour .";
+    }
+}
+.indexBlockFour {
+    height: auto;
+    background: $main;
+    padding: 0 50px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    h5 {
+        font-size: 36px;
+        padding: 20px 0;
+        &::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: black;
+            margin: auto;
+            position: relative;
+            top: 20px;
+        }
+    }
+    p {
+        margin: 30px 0 50px;
+    }
+}

@@ -1,0 +1,13 @@
+.button {
+    background: $darker;
+    color: black;
+    text-align: center;
+    padding: 10px 55px;
+    filter: $shadow;
+    margin: 0 auto 30px;
+    transition: ease-in-out 100ms;
+    &:hover {
+        padding: 9px 50px;
+        margin: 2px auto 30px;
+    }
+}

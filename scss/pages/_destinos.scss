@@ -1,0 +1,39 @@
+.ubicacionesBlockOne {
+    text-align: center;
+    h2 {
+        margin: 50px 0 0;
+        padding: 20px 0 40px;
+        font-size: 48px;
+        display: inline-block;
+        &::after {
+            content: "";
+            display: block;
+            background: black;
+            width: 50%;
+            height: 1px;
+            margin: auto;
+            position: relative;
+            top: 40px;
+        }
+    }
+    p {
+        margin: 50px 0 100px;
+        @media (min-width: 900px) {
+            margin: 50px 200px 150px;
+        }
+    }
+}
+.ubicacionesBlockTwo {
+    background: $main;
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include card(#fff); //mixin
+}
+.ubicacionesBlockThree {
+    padding: 100px 0;
+    margin: 0 0 100px;
+    background: $main;
+    display: flex;
+}

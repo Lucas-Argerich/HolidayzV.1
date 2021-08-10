@@ -1,0 +1,102 @@
+.reservarBlockOne {
+    margin: 10px 50px;
+    font-size: 12px;
+    @media (min-width: 769px) {
+        margin: 10px 150px;
+    }
+    svg {
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+    a {
+        color: #0051af;
+    }
+}
+.reservarBlockTwo {
+    background: url("../assets/images/three\ brown\ wooden\ boat\ on\ blue\ lake\ water\ taken\ at\ daytime.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 50px;
+    .form {
+        background: #fff;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 769px) {
+            width: 30%;
+        }
+        h2 {
+            color: #bb0000;
+            font-size: 24px;
+            font-weight: 600;
+            margin: 10px 10px 0;
+            align-self: flex-start;
+        }
+        .inputContainer input {
+            width: 100%;
+            padding: 10px 35px;
+            background: url("../assets/icons/noun_Search_2157337.svg");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            background-position: 5px 9px;
+            background-color: $main;
+            border-radius: 5px;
+            border: 0;
+            margin: 15px 0;
+        }
+        .dates {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+
+            div {
+                position: relative;
+                width: 50%;
+                margin: 0 0 15px;
+                input {
+                    width: 100%;
+                    padding: 15px 0 10px 20px;
+                    background-color: $main;
+                    border-radius: 5px;
+                    border: 0;
+                }
+                label {
+                    position: absolute;
+                    font-size: 12px;
+                    font-weight: 600;
+                    top: 1px;
+                    left: 4px;
+                }
+            }
+        }
+        select {
+            width: 90%;
+            padding: 9px 0 9px 30px;
+            background: url("../assets/icons/noun_people_861209.svg");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            background-position: 5px 9px;
+            background-color: $main;
+            border-radius: 5px;
+            border: 0;
+            line-height: 15px;
+        }
+        .buscar {
+            font-size: 24px;
+            padding: 5px 30px;
+            border: 0;
+            background: $main;
+            border-radius: 30px;
+            font-family: "Bebas Neue", cursive;
+            margin: 15px;
+        }
+    }
+}

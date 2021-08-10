@@ -1,0 +1,167 @@
+.nosotrosBlockOne {
+    margin: 20px 50px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: $main;
+    h2 {
+        font-size: 36px;
+        padding: 10px 10%;
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #000;
+            position: relative;
+            top: 20px;
+        }
+    }
+    p {
+        margin: 40px 0;
+    }
+}
+.nosotrosBlockTwo {
+    margin: 0 50px;
+    background: url("../assets/images/Puente\ Sobre\ El\ Agua.jpg");
+    height: 250px;
+    border-radius: 12px;
+    background-image: center;
+    background-position: center;
+    background-size: cover;
+}
+.nosotrosBlockThree {
+    margin: 20px 50px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: $main;
+    position: relative;
+    h3 {
+        font-size: 36px;
+        padding: 10px 5%;
+    }
+    p {
+        margin: 40px 0;
+    }
+    a {
+        background: $darker;
+        color: black;
+        text-align: center;
+        padding: 10px 35px;
+        filter: $shadow;
+        position: absolute;
+        bottom: 50px;
+        transition: ease-in-out 200ms;
+        &:hover {
+            padding: 9px 30px;
+        }
+    }
+    @media (max-width: 600px) {
+        padding: 10px 20px 100px;
+    }
+}
+.nosotrosBlockFour {
+    margin: 0 50px;
+    height: 500px;
+    background: url("../assets/images/pexels-ono-kosuki-5648408.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    .polygon {
+        width: 60px;
+        height: 61px;
+        background: #090d10;
+        z-index: 1;
+        clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 75%, 0% 100%);
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+    }
+}
+.nosotrosBlockFive {
+    margin: 20px 50px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: $main;
+    h3 {
+        font-size: 24px;
+        padding: 40px 0 10px;
+        &::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 1px;
+            background: #000;
+            position: relative;
+            top: 15px;
+        }
+    }
+    p {
+        margin: 40px 0;
+    }
+}
+.nosotrosBlockSix {
+    display: none;
+}
+@media (min-width: 600px) {
+    .nosotrosGrid {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(5, 250px) 300px;
+        grid-template-areas:
+            "b1   b1   vid "
+            "b1   b1   vid "
+            "b2   b2   vid "
+            "b2   b2   b4  "
+            "b3   b3   b4  "
+            "b3   b3   b5  ";
+        gap: 20px;
+        padding: 50px 200px;
+    }
+    .nosotrosBlockOne {
+        grid-area: b1;
+        margin: 0;
+        border-radius: 0 12px 12px 0;
+    }
+    .nosotrosBlockTwo {
+        grid-area: b2;
+        margin: 0;
+        height: auto;
+        border-radius: 0 12px 12px 0;
+    }
+    .nosotrosBlockThree {
+        grid-area: b3;
+        margin: 0;
+        border-radius: 0 12px 12px 0;
+    }
+    .nosotrosBlockFour {
+        grid-area: b4;
+        margin: 0;
+        height: auto;
+        border-radius: 12px 0 0 12px;
+    }
+    .nosotrosBlockFive {
+        grid-area: b5;
+        margin: 0;
+        border-radius: 12px 0 0 12px;
+    }
+    .nosotrosBlockSix {
+        grid-area: vid;
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        background-image: url("../assets/images/pexels-vlada-karpovich-8045150.mp4");
+        border-radius: 12px 0 0 12px;
+    }
+    .nosotrosBlockSix video {
+        width: 500px;
+    }
+}
+@media (max-width: 1250px) {
+    .nosotrosGrid {
+        padding: 50px 10px;
+    }
+}

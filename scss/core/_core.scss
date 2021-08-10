@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 13px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $main;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px;
+        border: solid 3px $main;
+    }
+}
