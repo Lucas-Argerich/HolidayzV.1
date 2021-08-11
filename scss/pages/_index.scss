@@ -95,6 +95,7 @@
     min-height: 400px;
     padding: 0 40px;
     display: flex;
+    overflow-x: hidden;
     .left {
         width: 100%;
         h3 {
