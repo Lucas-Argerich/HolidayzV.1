@@ -426,7 +426,8 @@ nav {
   background: #c4c4c4;
   min-height: 400px;
   padding: 0 40px;
-  display: flex; }
+  display: flex;
+  overflow-x: hidden; }
   .indexBlockTwo .left {
     width: 100%; }
     .indexBlockTwo .left h3 {
