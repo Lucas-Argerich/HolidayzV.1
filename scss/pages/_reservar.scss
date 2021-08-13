@@ -40,17 +40,20 @@
             margin: 10px 10px 0;
             align-self: flex-start;
         }
-        .inputContainer input {
-            width: 100%;
-            padding: 10px 35px;
-            background: url("../assets/icons/noun_Search_2157337.svg");
-            background-repeat: no-repeat;
-            background-size: 25px 25px;
-            background-position: 5px 9px;
-            background-color: $main;
-            border-radius: 5px;
-            border: 0;
-            margin: 15px 0;
+        .inputContainer {
+            width: 90%;
+            input {
+                width: 100%;
+                padding: 10px 35px;
+                background: url("../assets/icons/noun_Search_2157337.svg");
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+                background-position: 5px 9px;
+                background-color: $main;
+                border-radius: 5px;
+                border: 0;
+                margin: 15px 0;
+            }
         }
         .dates {
             width: 90%;
