@@ -18,8 +18,9 @@ body {
     border: solid 3px #c4c4c4; }
 
 body {
-  font-family: "Playfair Display", serif;
-  font-weight: normal; }
+  font-family: 'Andada Pro', serif;
+  font-weight: normal;
+  font-size: 17px; }
 
 nav a {
   color: black;
@@ -35,13 +36,14 @@ h6 {
   font-family: "Pacifico", cursive; }
 
 .button {
-  background: #a6a6a6;
+  background: white;
   color: black;
   text-align: center;
   padding: 10px 55px;
   filter: drop-shadow(0 4px 4px #00000030);
   margin: 0 auto 30px;
-  transition: ease-in-out 100ms; }
+  transition: ease-in-out 100ms;
+  border-radius: 3px; }
   .button:hover {
     padding: 9px 50px;
     margin: 2px auto 30px; }
@@ -54,7 +56,7 @@ footer {
   footer h6 {
     display: inline-block; }
   footer a {
-    padding-top: 20px;
+    padding-top: 5px;
     font-size: 14px; }
 
 header #headerLight {
@@ -620,7 +622,7 @@ nav {
     .nosotrosBlockOne h2::after {
       content: "";
       display: block;
-      width: 100%;
+      width: 60%;
       height: 1px;
       background: #000;
       position: relative;
@@ -649,16 +651,8 @@ nav {
   .nosotrosBlockThree p {
     margin: 40px 0; }
   .nosotrosBlockThree a {
-    background: #a6a6a6;
-    color: black;
-    text-align: center;
-    padding: 10px 35px;
-    filter: drop-shadow(0 4px 4px #00000030);
     position: absolute;
-    bottom: 50px;
-    transition: ease-in-out 200ms; }
-    .nosotrosBlockThree a:hover {
-      padding: 9px 30px; }
+    bottom: 50px; }
   @media (max-width: 600px) {
     .nosotrosBlockThree {
       padding: 10px 20px 100px; } }
@@ -758,44 +752,44 @@ nav {
   .serviciosBody h2::after {
     content: "";
     display: block;
-    width: 25%;
+    width: 20%;
     height: 1px;
     margin: auto;
     background: black;
     position: relative;
-    top: 10px; }
+    top: 20px; }
 
-.serviciosBlockOne {
+.serviciosBody .serviciosBlockOne {
   display: flex;
-  flex-direction: column;
-  margin: 30px 0px; }
-  .serviciosBlockOne div {
+  flex-direction: column; }
+  .serviciosBody .serviciosBlockOne div {
     width: 280px;
     height: 220px;
     margin: 20px auto;
     display: flex;
-    filter: drop-shadow(0 4px 4px #00000030); }
-    .serviciosBlockOne div.boxOne {
+    filter: drop-shadow(0 4px 4px #00000030);
+    border-radius: 10px 10px 0 0; }
+    .serviciosBody .serviciosBlockOne div.boxOne {
       background: url("../assets/images/photo of brown bench near swimming pool.jpg");
       background-size: cover;
       background-position: center; }
-    .serviciosBlockOne div.boxTwo {
+    .serviciosBody .serviciosBlockOne div.boxTwo {
       background: url("../assets/images/white private plane on airstrip.jpg");
       background-size: cover;
       background-position: center; }
-    .serviciosBlockOne div.boxThree {
+    .serviciosBody .serviciosBlockOne div.boxThree {
       background: url("../assets/images/white cruise ship on sea during daytime.jpg");
       background-size: cover;
       background-position: center; }
-    .serviciosBlockOne div.boxFour {
+    .serviciosBody .serviciosBlockOne div.boxFour {
       background: url("../assets/images/blue Volkswagen Polo 5-door hatchback.jpg");
       background-size: cover;
       background-position: center; }
-    .serviciosBlockOne div.boxFive {
+    .serviciosBody .serviciosBlockOne div.boxFive {
       background: url("../assets/images/white and blue identification card.jpg");
       background-size: cover;
       background-position: center; }
-    .serviciosBlockOne div p {
+    .serviciosBody .serviciosBlockOne div p {
       width: 100%;
       height: 40px;
       line-height: 40px;
@@ -804,37 +798,37 @@ nav {
       font-weight: 600;
       background: #c4c4c4; }
   @media (min-width: 600px) {
-    .serviciosBlockOne {
+    .serviciosBody .serviciosBlockOne {
       margin: 80px 200px; } }
   @media (min-width: 900px) {
-    .serviciosBlockOne {
-      margin: 80px 50px;
+    .serviciosBody .serviciosBlockOne {
+      margin: 80px 50px 120px;
       flex-direction: row;
       justify-content: space-between; }
-      .serviciosBlockOne div {
+      .serviciosBody .serviciosBlockOne div {
         width: 200px;
         height: 150px; } }
   @media (min-width: 1440px) {
-    .serviciosBlockOne div {
+    .serviciosBody .serviciosBlockOne div {
       width: 250px;
       height: 150px; } }
   @media (min-width: 2560px) {
-    .serviciosBlockOne div {
+    .serviciosBody .serviciosBlockOne div {
       width: 350px;
       height: 200px; } }
 
-.serviciosBlockTwo {
+.serviciosBody .serviciosBlockTwo {
   background-color: #c4c4c4;
   padding: 40px 100px;
   margin: 0 0 60px;
   position: relative; }
-  .serviciosBlockTwo h3 {
+  .serviciosBody .serviciosBlockTwo h3 {
     display: inline-block;
     font-size: 36px;
     padding: 0 0 20px;
     margin: 0 0 30px;
     position: relative; }
-    .serviciosBlockTwo h3::before {
+    .serviciosBody .serviciosBlockTwo h3::before {
       display: block;
       content: "";
       width: 50%;
@@ -842,23 +836,15 @@ nav {
       background: black;
       position: absolute;
       bottom: 0; }
-  .serviciosBlockTwo p {
+  .serviciosBody .serviciosBlockTwo p {
     padding: 20px 0; }
-  .serviciosBlockTwo ul {
+  .serviciosBody .serviciosBlockTwo ul {
     padding-bottom: 100px; }
-    .serviciosBlockTwo ul li {
+    .serviciosBody .serviciosBlockTwo ul li {
       list-style: circle inside; }
-  .serviciosBlockTwo a {
-    background: #a6a6a6;
-    color: black;
-    text-align: center;
-    padding: 10px 35px;
-    filter: drop-shadow(0 4px 4px #00000030);
+  .serviciosBody .serviciosBlockTwo a {
     position: absolute;
-    bottom: 50px;
-    transition: ease-in-out 200ms; }
-    .serviciosBlockTwo a:hover {
-      padding: 9px 30px; }
+    bottom: 50px; }
 
 .ubicacionesBlockOne {
   text-align: center; }
@@ -1052,17 +1038,20 @@ nav {
   padding: 10px 50px;
   margin: 0 0 60px 0;
   background: #c4c4c4; }
-  .contactoBlockTwo h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .contactoBlockTwo h4 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px; }
   .contactoBlockTwo div {
-    margin: 0 0 30px; }
+    margin: 20px 0 0; }
+    .contactoBlockTwo div h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .contactoBlockTwo div h4 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px; }
     .contactoBlockTwo div div {
       margin: 0 0 30px;
       display: flex;
       flex-direction: column; }
+      .contactoBlockTwo div div a {
+        color: #000;
+        text-decoration: underline; }
