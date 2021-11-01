@@ -195,11 +195,8 @@ header #headerLight {
   background-position: center;
   background-size: cover; }
 
-#indexBody nav {
-  position: sticky;
-  position: -webkit-sticky; }
-
 nav {
+  position: sticky;
   top: 0;
   height: 64px;
   background: #c4c4c4;
@@ -253,7 +250,7 @@ nav {
       justify-content: center; }
       nav ul {
         width: 100%;
-        position: relative;
+        position: absolute;
         top: 64px;
         transform: scale(0, 1);
         transition: 400ms;
@@ -297,7 +294,7 @@ nav {
       nav .navToggle:checked ~ .navToggleLabel {
         transform: rotate(270deg); }
       nav .navToggleLabel {
-        position: absolute;
+        position: inherit;
         margin: auto;
         height: 100%;
         display: flex;
